@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="{{ site.name }}" property="og:title" />
+    <title>{{ site.name }}</title>
+    {% include head.html %}
+  </head>
+  <body class="{{ page.type }}">
+    {% include header.html %}
+    
+    {{ content }}
+  </body>
+</html>
+

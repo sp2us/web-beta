@@ -1,0 +1,14 @@
+@mixin transition($options...) {
+  -webkit-transition: $options;
+  -moz-transition:    $options;
+  -o-transition:      $options;
+  transition:         $options;
+}
+
+@mixin full_background($url) {
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

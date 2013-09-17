@@ -1,0 +1,29 @@
+# Global configuration
+source:         _source
+destination:    _dest
+safe:           false
+plugins:        _source/_plugins
+
+# Build command options
+
+# Serve command options
+port:           1616
+
+# Our own stuff
+name:           Space++
+logo:           /images/logo.png
+default_post_icon: /images/post.png
+markdown:       rdiscount
+pygments:       true
+permalink:      /blog/:title
+
+links:
+  - name:       about
+    url:        /about/
+  - name:       blog
+    url:        /blog/
+
+sass:
+  syntax: scss      # scss|sass
+  style:  nested    # nested|expanded|compact|compressed
+

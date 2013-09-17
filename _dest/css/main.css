@@ -1,0 +1,281 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,vietnamese);
+/* Colors */
+/* Font weights */
+/* Page types */
+/* Logo images */
+/*****************************************************************************/
+/* Common
+/*****************************************************************************/
+html {
+  height: 100%;
+  font-size: 100%; }
+
+body {
+  background-image: url("/images/bg_.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased; }
+  body .content {
+    margin-top: 65px; }
+  body.index {
+    background-image: url("/images/bg_index.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  body.page {
+    background-image: url("/images/bg_page.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  body.blog {
+    background-image: url("/images/bg_blog.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+/*****************************************************************************/
+/* Header & Menu
+/*****************************************************************************/
+header.sp-nav {
+  background-color: transparent;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+  height: 60px; }
+  header.sp-nav .nav.navbar-nav li a {
+    color: #cc0000;
+    padding: 20px 0px 17px;
+    width: 98px;
+    text-align: center;
+    font-size: 110%;
+    -webkit-transition: color 0.32s ease-out, border-bottom 0.25s ease-out;
+    -moz-transition: color 0.32s ease-out, border-bottom 0.25s ease-out;
+    -o-transition: color 0.32s ease-out, border-bottom 0.25s ease-out;
+    transition: color 0.32s ease-out, border-bottom 0.25s ease-out; }
+    header.sp-nav .nav.navbar-nav li a:hover, header.sp-nav .nav.navbar-nav li a:active {
+      border-bottom: 3px solid white;
+      color: white; }
+
+/*****************************************************************************/
+/* Index
+/*****************************************************************************/
+body.index .content {
+  position: relative;
+  margin-top: 90px; }
+  body.index .content .logo {
+    display: block; }
+    body.index .content .logo img {
+      width: 687px;
+      height: auto; }
+  body.index .content .tagline {
+    margin: 20px 0 40px; }
+    body.index .content .tagline p {
+      color: #666666;
+      font-size: 185%;
+      font-weight: 300; }
+      body.index .content .tagline p a {
+        font-weight: 600;
+        color: #cc0000;
+        text-decoration: none;
+        display: inline-block; }
+        body.index .content .tagline p a:after {
+          content: '';
+          display: block;
+          border-bottom: 1px solid #cc0000;
+          width: 0;
+          -webkit-transition: 0.25s ease;
+          -moz-transition: 0.25s ease;
+          -o-transition: 0.25s ease;
+          transition: 0.25s ease; }
+        body.index .content .tagline p a:hover:after {
+          width: 100%; }
+  body.index .content .subscribe_form div[class*='col-md-'] {
+    padding-right: 0;
+    padding-left: 0; }
+  body.index .content .subscribe_form .input_submit, body.index .content .subscribe_form .btn_submit {
+    border-radius: 0; }
+  body.index .content .subscribe_form .input_submit {
+    opacity: 0.8; }
+  body.index .content .subscribe_form .btn_submit {
+    background: #cc0000;
+    color: white;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+    body.index .content .subscribe_form .btn_submit:hover {
+      text-decoration: underline;
+      background: red; }
+    body.index .content .subscribe_form .btn_submit:active {
+      background: #990000; }
+
+/*****************************************************************************/
+/* Blog
+/*****************************************************************************/
+body.blog .content {
+  margin-top: 100px; }
+  body.blog .content > .row {
+    background: white;
+    padding: 45px 50px 60px;
+    margin-bottom: 30px; }
+
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em; }
+  ul.posts > li {
+    line-height: 1.75em;
+    margin-bottom: 30px; }
+    ul.posts > li .post_image {
+      width: 100%;
+      height: 100%;
+      display: table; }
+      ul.posts > li .post_image img {
+        width: 90%;
+        height: auto; }
+    ul.posts > li span {
+      color: #666;
+      font-family: "Arial", sans-serif;
+      font-size: 80%;
+      font-style: italic; }
+    ul.posts > li h2 {
+      margin-top: 0px; }
+      ul.posts > li h2 a {
+        color: #cc0000; }
+        ul.posts > li h2 a:hover {
+          color: red; }
+        ul.posts > li h2 a:active {
+          color: #990000; }
+    ul.posts > li p.excerpt {
+      font-family: "Arial", sans-serif;
+      font-size: 90%;
+      color: #666666; }
+      ul.posts > li p.excerpt a {
+        font-weight: bold;
+        color: black; }
+
+/*****************************************************************************/
+/* Pages
+/*****************************************************************************/
+body.page .content {
+  margin-top: 100px; }
+  body.page .content .page_content {
+    background: white;
+    padding: 45px 100px 60px;
+    margin-bottom: 30px; }
+    body.page .content .page_content h1 {
+      margin-bottom: 55px; }
+    body.page .content .page_content p {
+      font-size: 120%;
+      line-height: 130%;
+      margin: 0 0 25px; }
+
+/*****************************************************************************/
+/* Site
+/*****************************************************************************/
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 42em;
+  margin: 3em auto 2em;
+  line-height: 1.5em; }
+
+.site .header a {
+  font-weight: bold;
+  text-decoration: none; }
+
+.site .header h1.title {
+  display: inline-block;
+  margin-bottom: 2em; }
+
+.site .header h1.title a {
+  color: #a00; }
+
+.site .header h1.title a:hover {
+  color: #000; }
+
+.site .header a.extra {
+  color: #aaa;
+  margin-left: 1em; }
+
+.site .header a.extra:hover {
+  color: #000; }
+
+.site .meta {
+  color: #aaa; }
+
+footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden; }
+  footer .contact {
+    float: left;
+    margin-right: 3em; }
+    footer .contact a {
+      color: #8085C1; }
+  footer .rss {
+    margin-top: 1.1em;
+    margin-right: -.2em;
+    float: right; }
+    footer .rss img {
+      border: 0; }
+
+/*****************************************************************************/
+/* Posts
+/*****************************************************************************/
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em; }
+
+.post ul, .post ol {
+  margin-left: 1.35em; }
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em; }
+
+.post pre code {
+  border: none; }
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF; }
+
+.post pre.terminal code {
+  background-color: #333; }

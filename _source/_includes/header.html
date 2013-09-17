@@ -1,0 +1,18 @@
+<header class='navbar navbar-inverse navbar-fixed-top sp-nav'>
+<div class="container">
+    <!-- logo -->
+    <div class='navbar-header logo'>
+        <div class='logo-img'>
+            <span></span>
+        </div>
+    </div>
+    <!-- menu -->
+    <nav class="navbar-collapse collapse" role="navigation">
+    <ul class="nav navbar-nav navbar-right">
+        {% for link in site.links %}
+            <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+        {% endfor %}
+    </ul>
+    </nav>
+</div>
+</header>

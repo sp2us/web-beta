@@ -1,0 +1,37 @@
+---
+layout: blog
+title: Our stories
+type: blog
+---
+
+<ul class="posts">
+    {% for post in site.posts %}
+        <li>
+        <div class="row">
+            <div class="col-md-2">
+                {% if post.image %}
+                    {% assign src = post.image %}
+                {% else %}
+                    {% assign src = site.default_post_icon %}
+                {% endif %}
+                <div class="post_image">
+                    <img src={{ src }} />
+                </div>
+            </div>
+            <div class="col-md-10">
+                <span>
+                    On {{ post.date | date_to_string }},
+                    we wrote
+                </span>
+                <h2>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </h2>
+                <p class="excerpt">
+                {{ post.excerpt }}...
+                <a href="{{ post.url }}">read more</a>
+                </p>
+            </div>
+        </div>
+        </li>
+    {% endfor %}
+</ul>
